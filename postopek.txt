@@ -1,0 +1,23 @@
+Postavitev git "strežnika"
+============
+¸¸¸
+    ssh user@XXX.XXX.XXX.XXX
+    git init --bare ~/build/git_predstavitev.git
+    exit //Izhod iz ssh-ja, naprej lokalno
+¸¸¸
+
+1. način
+-----------
+¸¸¸
+    git clone user@XXX.XXX.XXX.XXX:build/git_predstavitev.git
+¸¸¸
+
+2. način (npr. če imamo že obstoječi projekt)
+-----------
+¸¸¸
+    cd moj_projekt
+    // git init
+    git remote add origin user@XXX.XXX.XXX.XXX:build/git_predstavitev.git
+    git push -u origin master
+¸¸¸
+
